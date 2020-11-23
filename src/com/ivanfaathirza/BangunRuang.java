@@ -1,17 +1,13 @@
 package com.ivanfaathirza;
 
 public abstract class BangunRuang {
-    protected double jariJari;
+    protected float jariJari;
 
-    public BangunRuang(double jariJari){
+    public BangunRuang(float jariJari){
         this.jariJari = jariJari;
     }
 
-    public double getJariJari() {
-        return jariJari;
-    }
-
-    public abstract double hitungVolume();
+    public abstract float hitungVolume();
 
     public void tampil(){
         System.out.printf("Volume : %.0f cm%n", Math.ceil(hitungVolume()));

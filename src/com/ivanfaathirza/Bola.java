@@ -2,12 +2,12 @@ package com.ivanfaathirza;
 
 public class Bola extends BangunRuang{
 
-    public Bola(double jariJari){
+    public Bola(float jariJari){
         super(jariJari);
     }
 
     @Override
-    public double hitungVolume() {
-        return 4/3f * Math.PI * Math.pow(super.getJariJari(), 3);
+    public float hitungVolume() {
+        return (float) (4/3f * Math.PI * Math.pow(jariJari, 3));
     }
 }
